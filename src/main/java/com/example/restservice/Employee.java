@@ -10,6 +10,9 @@ public class Employee {
     private String email;
     private String title;
 
+    public Employee() {
+    }
+
     public Employee(String employee_id, String first_name, String last_name, String email, String title) {
         this.employee_id = employee_id;
         this.first_name = first_name;
@@ -21,15 +24,30 @@ public class Employee {
     @JsonProperty("employee_id")
     public String getEmployee_id() { return employee_id; }
 
+    @JsonProperty("employee_id")
+    public void setEmployee_id(String employee_id) { this.employee_id = employee_id; }
+
     @JsonProperty("first_name")
     public String getFirst_name() { return first_name; }
+
+    @JsonProperty("first_name")
+    public void setFirst_name(String first_name) { this.first_name = first_name; }
 
     @JsonProperty("last_name")
     public String getLast_name() { return last_name; }
 
+    @JsonProperty("last_name")
+    public void setLast_name(String last_name) { this.last_name = last_name; }
+
     @JsonProperty("email")
     public String getEmail() { return email; }
 
+    @JsonProperty("email")
+    public void setEmail(String email) { this.email = email; }
+
     @JsonProperty("title")
     public String getTitle() { return title; }
+
+    @JsonProperty("title")
+    public void setTitle(String title) { this.title = title; }
 }
