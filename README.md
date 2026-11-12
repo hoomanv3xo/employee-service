@@ -3,7 +3,7 @@
 A basic RESTful web service built with Java Spring Boot and Gradle.
 
 `GET /employees` returns a hard-coded list of employees as JSON.
-
+![Screenshot of the app](employees.png)
 ## Run
 
     ./gradlew bootRun
